@@ -20,7 +20,7 @@ class Command(BaseCommand):
                 self.style.SUCCESS(f"User created with username: {user.username}")
             )
 
-        for i in range(100):
+        for i in range(10):
             project = Project.objects.create(
                 title=f"Dummy Project {i+1}",
                 content="This is a dummy project for local development.",

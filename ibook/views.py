@@ -14,7 +14,7 @@ from .serializers import ProjectSerializer
 class ProjectListViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
     serializer_class = ProjectSerializer
-    queryset = Project.objects.select_related("author").all()
+    queryset = Project.objects.select_related("author").order_by("created_at")
     pagination_class = PageNumberPagination
     http_method_names = ["get", "post", "put", "patch"]
 
