@@ -1,0 +1,10 @@
+django
+django-cors-headers
+djangorestframework
+ruff==0.6.9
+drf-spectacular
+django-debug-toolbar
+djoser
+djangorestframework-simplejwt
+django-allauth
+django-filter
